@@ -55,7 +55,7 @@ public class OrderController {
 		return Response.status(Status.OK).entity(order).build();
 	}
 
-	@GET
+	@GET 
 	@Path("/table/{table}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getAllOrdersByTable(@PathParam("table") Integer table) throws ResourceNotFoundException {
